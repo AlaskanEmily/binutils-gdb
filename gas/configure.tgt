@@ -395,6 +395,7 @@ case ${generic_target} in
   sparc-*-linux-*)			fmt=elf em=linux ;;
   sparc-*-solaris*)			fmt=elf em=solaris ;;
   sparc-*-*bsd*)			fmt=elf em=nbsd ;;
+  sparc-*-os216*)			fmt=elf em=os216 endian=big ;;
 
   spu-*-elf)				fmt=elf ;;
 

@@ -710,6 +710,11 @@ sparc64-*-solaris2* | sparcv9-*-solaris2*)
 			targ_extra_emuls="elf64_sparc elf32_sparc_sol2 elf32_sparc"
 			targ_extra_libpath=$targ_extra_emuls
 			tdir_elf32_sparc=`echo ${targ_alias} | sed -e 's/64//'` ;;
+sparc64-*-os216* | sparcv9-*-os216*)
+			targ_emul=elf64_sparc
+			targ_extra_emuls="elf32_sparc"
+			targ_extra_libpath=elf32_sparc
+			tdir_elf32_sparc=`echo ${targ_alias} | sed -e 's/64//'` ;;
 sparc64-*-*)		targ_emul=elf64_sparc ;;
 sparc*-*-linux-*)	targ_emul=elf32_sparc
 			targ_extra_emuls="elf64_sparc"
